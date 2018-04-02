@@ -89,11 +89,4 @@
   (reagent/render [ui]              ;; mount the application's ui into '<div id="app" />'
                   (js/document.getElementById "app")))
 
-(deftest test-1
-  (is (= 1 1)))
-
-(enable-console-print!)
-(println "tests - before")
-(run-tests)
-(println "tests - after")
 
