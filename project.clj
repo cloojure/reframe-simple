@@ -16,7 +16,8 @@
   :clean-targets ^{:protect false} ["resources/public/js"]
   :cljsbuild {:builds
               {:client
-               {:source-paths ["src" "test"]
+               {:id "something"
+                :source-paths ["src" "test"]
                 :figwheel     {:on-jsload "simple.core/run"}
                 :compiler     {:output-dir           "resources/public/js"
                                :output-to            "resources/public/js/client.js"
