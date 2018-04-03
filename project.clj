@@ -29,10 +29,10 @@
                                :source-map-timestamp true}}
                {:id           "test"
                 :source-paths ["src" "test"]
-                :figwheel     {:on-jsload "simple.core/run"
+                :figwheel     {:on-jsload "simple.test-runner/run-tests"
                                :open-urls ["http://localhost:3449/tstr.html"]                              }
                 :compiler     {:main                 "simple.test-runner" ; or "simple.test-runner"
-                               :asset-path           "js"
+                               :asset-path           "tst"
                                :output-to            "resources/public/tst/client.js"
                                :output-dir           "resources/public/tst"
                                :optimizations        :none
