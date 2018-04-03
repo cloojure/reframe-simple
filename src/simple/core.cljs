@@ -77,7 +77,7 @@
 (defn ui
   []
   [:div
-   [:h1 "Hello world. The time is:"]
+   [:h1 "Hello world. It is now:"]
    [clock]
    [color-input]])
 
